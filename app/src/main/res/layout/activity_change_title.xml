@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeTitleActivity">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/field1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/mainET"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/colorExample"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/field1"
+        android:id="@+id/field2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/HONG"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"/>
+        <ImageView
+            android:id="@+id/XANH"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"/>
+        <ImageView
+            android:id="@+id/VANG"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/VANG"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/field2"
+        android:id="@+id/field3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/DO"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/Do"/>
+        <ImageView
+            android:id="@+id/XANHLA"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/XanhLa"/>
+        <ImageView
+            android:id="@+id/NAU"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/Nau"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_below="@id/field3"
+        android:layout_margin="20dp"
+        android:id="@+id/saveBtn"/>
+
+</RelativeLayout>
